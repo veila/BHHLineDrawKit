@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE39E98A1E1B5AE000A06E49 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE39E9841E1B5AE000A06E49 /* ViewController.m */; };
+		CE39E98B1E1B5AE000A06E49 /* pickerColor.png in Resources */ = {isa = PBXBuildFile; fileRef = CE39E9861E1B5AE000A06E49 /* pickerColor.png */; };
+		CE39E98C1E1B5AE000A06E49 /* BHHLineDrawKit.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE39E9871E1B5AE000A06E49 /* BHHLineDrawKit.xib */; };
+		CE39E98D1E1B5AE000A06E49 /* BHHLineDrawKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE39E9881E1B5AE000A06E49 /* BHHLineDrawKit.m */; };
 		CEC2EFCB1E15FA3C00130555 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC2EFCA1E15FA3C00130555 /* main.m */; };
 		CEC2EFCE1E15FA3C00130555 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC2EFCD1E15FA3C00130555 /* AppDelegate.m */; };
 		CEC2EFD41E15FA3C00130555 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC2EFD21E15FA3C00130555 /* Main.storyboard */; };
@@ -34,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE39E9841E1B5AE000A06E49 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CE39E9851E1B5AE000A06E49 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CE39E9861E1B5AE000A06E49 /* pickerColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pickerColor.png; sourceTree = "<group>"; };
+		CE39E9871E1B5AE000A06E49 /* BHHLineDrawKit.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BHHLineDrawKit.xib; sourceTree = "<group>"; };
+		CE39E9881E1B5AE000A06E49 /* BHHLineDrawKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHHLineDrawKit.m; sourceTree = "<group>"; };
+		CE39E9891E1B5AE000A06E49 /* BHHLineDrawKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHHLineDrawKit.h; sourceTree = "<group>"; };
 		CEC2EFC61E15FA3C00130555 /* HHColorPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHColorPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC2EFCA1E15FA3C00130555 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CEC2EFCC1E15FA3C00130555 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -98,6 +108,12 @@
 		CEC2EFC81E15FA3C00130555 /* HHColorPicker */ = {
 			isa = PBXGroup;
 			children = (
+				CE39E9851E1B5AE000A06E49 /* ViewController.h */,
+				CE39E9841E1B5AE000A06E49 /* ViewController.m */,
+				CE39E9861E1B5AE000A06E49 /* pickerColor.png */,
+				CE39E9891E1B5AE000A06E49 /* BHHLineDrawKit.h */,
+				CE39E9881E1B5AE000A06E49 /* BHHLineDrawKit.m */,
+				CE39E9871E1B5AE000A06E49 /* BHHLineDrawKit.xib */,
 				CEC2EFCC1E15FA3C00130555 /* AppDelegate.h */,
 				CEC2EFCD1E15FA3C00130555 /* AppDelegate.m */,
 				CEC2EFD21E15FA3C00130555 /* Main.storyboard */,
@@ -242,8 +258,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEC2EFD91E15FA3C00130555 /* LaunchScreen.storyboard in Resources */,
+				CE39E98C1E1B5AE000A06E49 /* BHHLineDrawKit.xib in Resources */,
 				CEC2EFD61E15FA3C00130555 /* Assets.xcassets in Resources */,
 				CEC2EFD41E15FA3C00130555 /* Main.storyboard in Resources */,
+				CE39E98B1E1B5AE000A06E49 /* pickerColor.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,8 +286,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE39E98A1E1B5AE000A06E49 /* ViewController.m in Sources */,
 				CEC2EFCE1E15FA3C00130555 /* AppDelegate.m in Sources */,
 				CEC2EFCB1E15FA3C00130555 /* main.m in Sources */,
+				CE39E98D1E1B5AE000A06E49 /* BHHLineDrawKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
