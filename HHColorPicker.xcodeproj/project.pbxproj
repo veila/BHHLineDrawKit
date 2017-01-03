@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		CEC2EFCB1E15FA3C00130555 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC2EFCA1E15FA3C00130555 /* main.m */; };
 		CEC2EFCE1E15FA3C00130555 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC2EFCD1E15FA3C00130555 /* AppDelegate.m */; };
-		CEC2EFD11E15FA3C00130555 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC2EFD01E15FA3C00130555 /* ViewController.m */; };
 		CEC2EFD41E15FA3C00130555 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC2EFD21E15FA3C00130555 /* Main.storyboard */; };
 		CEC2EFD61E15FA3C00130555 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC2EFD51E15FA3C00130555 /* Assets.xcassets */; };
 		CEC2EFD91E15FA3C00130555 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC2EFD71E15FA3C00130555 /* LaunchScreen.storyboard */; };
@@ -39,8 +38,6 @@
 		CEC2EFCA1E15FA3C00130555 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CEC2EFCC1E15FA3C00130555 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEC2EFCD1E15FA3C00130555 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CEC2EFCF1E15FA3C00130555 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CEC2EFD01E15FA3C00130555 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CEC2EFD31E15FA3C00130555 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEC2EFD51E15FA3C00130555 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEC2EFD81E15FA3C00130555 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -103,8 +100,6 @@
 			children = (
 				CEC2EFCC1E15FA3C00130555 /* AppDelegate.h */,
 				CEC2EFCD1E15FA3C00130555 /* AppDelegate.m */,
-				CEC2EFCF1E15FA3C00130555 /* ViewController.h */,
-				CEC2EFD01E15FA3C00130555 /* ViewController.m */,
 				CEC2EFD21E15FA3C00130555 /* Main.storyboard */,
 				CEC2EFD51E15FA3C00130555 /* Assets.xcassets */,
 				CEC2EFD71E15FA3C00130555 /* LaunchScreen.storyboard */,
@@ -273,7 +268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEC2EFD11E15FA3C00130555 /* ViewController.m in Sources */,
 				CEC2EFCE1E15FA3C00130555 /* AppDelegate.m in Sources */,
 				CEC2EFCB1E15FA3C00130555 /* main.m in Sources */,
 			);
@@ -505,6 +499,7 @@
 				CEC2EFF51E15FA3C00130555 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEC2EFF61E15FA3C00130555 /* Build configuration list for PBXNativeTarget "HHColorPickerTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +508,7 @@
 				CEC2EFF81E15FA3C00130555 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEC2EFF91E15FA3C00130555 /* Build configuration list for PBXNativeTarget "HHColorPickerUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +517,7 @@
 				CEC2EFFB1E15FA3C00130555 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
