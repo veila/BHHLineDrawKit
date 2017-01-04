@@ -11,6 +11,8 @@
 		CE39E98B1E1B5AE000A06E49 /* pickerColor.png in Resources */ = {isa = PBXBuildFile; fileRef = CE39E9861E1B5AE000A06E49 /* pickerColor.png */; };
 		CE39E98C1E1B5AE000A06E49 /* BHHLineDrawKit.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE39E9871E1B5AE000A06E49 /* BHHLineDrawKit.xib */; };
 		CE39E98D1E1B5AE000A06E49 /* BHHLineDrawKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE39E9881E1B5AE000A06E49 /* BHHLineDrawKit.m */; };
+		CE39E9901E1B61CB00A06E49 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE39E98F1E1B61CB00A06E49 /* DrawView.m */; };
+		CE8ECBBA1E1CAA4100DE3858 /* BHHDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8ECBB91E1CAA4100DE3858 /* BHHDrawView.m */; };
 		CEC2EFCB1E15FA3C00130555 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC2EFCA1E15FA3C00130555 /* main.m */; };
 		CEC2EFCE1E15FA3C00130555 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC2EFCD1E15FA3C00130555 /* AppDelegate.m */; };
 		CEC2EFD41E15FA3C00130555 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC2EFD21E15FA3C00130555 /* Main.storyboard */; };
@@ -44,6 +46,10 @@
 		CE39E9871E1B5AE000A06E49 /* BHHLineDrawKit.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BHHLineDrawKit.xib; sourceTree = "<group>"; };
 		CE39E9881E1B5AE000A06E49 /* BHHLineDrawKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHHLineDrawKit.m; sourceTree = "<group>"; };
 		CE39E9891E1B5AE000A06E49 /* BHHLineDrawKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHHLineDrawKit.h; sourceTree = "<group>"; };
+		CE39E98E1E1B61CB00A06E49 /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
+		CE39E98F1E1B61CB00A06E49 /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
+		CE8ECBB81E1CAA4100DE3858 /* BHHDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHHDrawView.h; sourceTree = "<group>"; };
+		CE8ECBB91E1CAA4100DE3858 /* BHHDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHHDrawView.m; sourceTree = "<group>"; };
 		CEC2EFC61E15FA3C00130555 /* HHColorPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHColorPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC2EFCA1E15FA3C00130555 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CEC2EFCC1E15FA3C00130555 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -111,6 +117,8 @@
 				CE39E9851E1B5AE000A06E49 /* ViewController.h */,
 				CE39E9841E1B5AE000A06E49 /* ViewController.m */,
 				CE39E9861E1B5AE000A06E49 /* pickerColor.png */,
+				CE39E98E1E1B61CB00A06E49 /* DrawView.h */,
+				CE39E98F1E1B61CB00A06E49 /* DrawView.m */,
 				CE39E9891E1B5AE000A06E49 /* BHHLineDrawKit.h */,
 				CE39E9881E1B5AE000A06E49 /* BHHLineDrawKit.m */,
 				CE39E9871E1B5AE000A06E49 /* BHHLineDrawKit.xib */,
@@ -121,6 +129,8 @@
 				CEC2EFD71E15FA3C00130555 /* LaunchScreen.storyboard */,
 				CEC2EFDA1E15FA3C00130555 /* Info.plist */,
 				CEC2EFC91E15FA3C00130555 /* Supporting Files */,
+				CE8ECBB81E1CAA4100DE3858 /* BHHDrawView.h */,
+				CE8ECBB91E1CAA4100DE3858 /* BHHDrawView.m */,
 			);
 			path = HHColorPicker;
 			sourceTree = "<group>";
@@ -287,9 +297,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE39E98A1E1B5AE000A06E49 /* ViewController.m in Sources */,
+				CE8ECBBA1E1CAA4100DE3858 /* BHHDrawView.m in Sources */,
 				CEC2EFCE1E15FA3C00130555 /* AppDelegate.m in Sources */,
 				CEC2EFCB1E15FA3C00130555 /* main.m in Sources */,
 				CE39E98D1E1B5AE000A06E49 /* BHHLineDrawKit.m in Sources */,
+				CE39E9901E1B61CB00A06E49 /* DrawView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

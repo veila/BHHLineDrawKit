@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "BHHLineDrawKit.h"
+#import "DrawView.h"
+#import "BHHDrawView.h"
 
 @interface ViewController ()<BHHLineDrawKitDelegate>
 
@@ -15,12 +17,21 @@
 
 @implementation ViewController{
     BHHLineDrawKit *picker;
+    BHHDrawView *drawView;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self addDrawView];
     [self addPickerColor];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void)addDrawView{
+    
+    drawView = [[BHHDrawView alloc] initWith:self.view.bounds];
+    [self.view addSubview:drawView];
+    
 }
 
 
@@ -34,12 +45,15 @@
 }
 
 -(void)endSettingColor:(UIColor*)color AndLineWidth:(CGFloat)width{
-    self.view.backgroundColor = color;
+    [drawView setupWidth:width andColor:color];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+
+
+
 
 
 @end

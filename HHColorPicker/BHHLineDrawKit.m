@@ -45,6 +45,8 @@
     viewColor.layer.borderWidth = 0.5;
     viewLineWidth.backgroundColor = [UIColor blackColor];
     [viewColor addSubview:viewLineWidth];
+    
+    self.pickerColorImage.image = [self colorSliderBackground];
 }
 
 
@@ -98,6 +100,8 @@
     
     viewLineWidth.frame = CGRectMake(viewColor.frame.size.width/2 - (percent*_maxViewColor)/2, viewColor.frame.size.width/2 - (percent*_maxViewColor)/2, percent*_maxViewColor, percent*_maxViewColor);
     viewLineWidth.layer.cornerRadius = (percent*_maxViewColor)/2;
+    
+    [self.delegate endSettingColor:viewLineWidth.backgroundColor AndLineWidth:viewLineWidth.frame.size.width];
 }
 
 
@@ -113,9 +117,6 @@
     }];
     
     [self addCornerRadiusAnimationFrom:_maxViewColor/2 andTo:1 andDuration:_durationAnimation];
-    
-    [self.delegate endSettingColor:viewLineWidth.backgroundColor AndLineWidth:viewLineWidth.frame.size.width];
-    
 }
 
 -(void)addCornerRadiusAnimationFrom:(CGFloat)from andTo:(CGFloat)to andDuration:(CFTimeInterval)duration{
@@ -130,9 +131,58 @@
 
 -(UIColor*)getColorFromValue:(float)value
 {
-    
-    UIColor *colorToSet = [UIColor colorWithHue:value saturation:value brightness:value alpha:1.0];
-    return colorToSet;
+    if(value<1/3.0){
+        return [UIColor colorWithWhite:value/0.3 alpha:1];
+    }
+    return [UIColor colorWithHue:((value-1/3.0)/0.7)*2/3.0 saturation:1 brightness:1 alpha:1];
 }
+
+
+- (UIImage*)colorSliderBackground
+{
+    CGSize size = self.pickerColorImage.frame.size;
+    
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0.0);
+    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGRect frame = self.pickerColorImage.frame;
+    CGPathRef path = [UIBezierPath bezierPathWithRoundedRect:frame cornerRadius:5].CGPath;
+    CGContextAddPath(context, path);
+    CGContextClip(context);
+    
+    CGColorSpaceRef colorSpaceRef = CGColorSpaceCreateDeviceRGB();
+    CGFloat components[] = {
+        0.0f, 0.0f, 0.0f, 1.0f,
+        1.0f, 1.0f, 1.0f, 1.0f,
+        1.0f, 0.0f, 0.0f, 1.0f,
+        1.0f, 1.0f, 0.0f, 1.0f,
+        0.0f, 1.0f, 0.0f, 1.0f,
+        0.0f, 1.0f, 1.0f, 1.0f,
+        0.0f, 0.0f, 1.0f, 1.0f
+    };
+    
+    size_t count = sizeof(components)/ (sizeof(CGFloat)* 4);
+    CGFloat locations[] = {0.0f, 0.9/3.0, 1/3.0, 1.5/3.0, 2/3.0, 2.5/3.0, 1.0};
+    
+    CGPoint startPoint = CGPointMake(0, 0);
+    CGPoint endPoint = CGPointMake(0, size.height);
+    
+    CGGradientRef gradientRef = CGGradientCreateWithColorComponents(colorSpaceRef, components, locations, count);
+    
+    CGContextDrawLinearGradient(context, gradientRef, startPoint, endPoint, kCGGradientDrawsAfterEndLocation);
+    
+    UIImage *tmp = UIGraphicsGetImageFromCurrentImageContext();
+    
+    CGGradientRelease(gradientRef);
+    CGColorSpaceRelease(colorSpaceRef);
+    
+    UIGraphicsEndImageContext();
+    
+    return tmp;
+}
+
+
+
 
 @end
